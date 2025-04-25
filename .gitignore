@@ -1,0 +1,17 @@
+# Python / Backend
+backend/__pycache__/
+backend/.env
+.venv/
+
+# Node.js / Frontend
+infosys-demo-ui/node_modules/
+infosys-demo-ui/build/ # Add if you have a build output directory
+infosys-demo-ui/.env* # Ignore .env files unless specific ones needed
+!infosys-demo-ui/.env.example # Example: Keep example env files
+
+# macOS
+.DS_Store
+
+# General
+*.log
+*.tmp

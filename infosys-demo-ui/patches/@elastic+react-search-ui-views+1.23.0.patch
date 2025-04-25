@@ -1,0 +1,15 @@
+diff --git a/node_modules/@elastic/react-search-ui-views/lib/index.mjs b/node_modules/@elastic/react-search-ui-views/lib/index.mjs
+index 57a3602..70f8da0 100644
+--- a/node_modules/@elastic/react-search-ui-views/lib/index.mjs
++++ b/node_modules/@elastic/react-search-ui-views/lib/index.mjs
+@@ -1363,8 +1363,8 @@ var BooleanFacet_default = BooleanFacet;
+ // src/Paging.tsx
+ import React6 from "react";
+ import RCPagination from "rc-pagination";
+-import enUsLocale from "rc-pagination/lib/locale/en_US";
+-function Paging(_a) {
++// Change to this:
++import en_US from 'rc-pagination/lib/locale/en_US.js';function Paging(_a) {
+   var _b = _a, {
+     className,
+     current,
