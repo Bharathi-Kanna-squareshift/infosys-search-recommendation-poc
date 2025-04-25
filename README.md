@@ -1,6 +1,6 @@
 # Infosys Search Recommendation POC
 
-Backend: Python/Flask
+Backend: Python/Fastapi
 Frontend: React (`infosys-demo-ui`)
 
 ## Prerequisites
