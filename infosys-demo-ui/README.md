@@ -21,14 +21,14 @@ Follow these steps to get the project running:
    Open your terminal or command prompt and run:
 
    ```bash
-   git clone <your_repository_url>
-   cd search-app
+   git clone https://github.com/Bharathi-Kanna-squareshift/infosys-search-recommendation-poc.git
+   cd infosys-search-recommendation-poc # Navigate into the cloned directory
 Use code with caution.
 Markdown
-Replace <your_repository_url> with the actual URL of your Git repository.
+Note: Your root project directory will be named infosys-search-recommendation-poc after cloning.
 2. Set Up the Backend (Python/Flask)
 Navigate to Project Root (if not already there):
-Make sure your terminal is in the search-app root directory.
+Make sure your terminal is in the infosys-search-recommendation-poc root directory.
 Create and Activate a Python Virtual Environment:
 It's highly recommended to use a virtual environment to manage Python dependencies. The .venv directory is already ignored by the suggested .gitignore.
 # Create the virtual environment (use python3 if python is linked to Python 2)
@@ -65,7 +65,7 @@ FLASK_ENV=development # Set to 'production' for deployment
 # SECRET_KEY=your_very_secret_key_here
 Use code with caution.
 Dotenv
-Make sure FLASK_APP points to the correct Flask application instance (e.g., app if your main file is app.py and contains app = Flask(__name__), or run:app if it's run.py). Looking at your structure, FLASK_APP=app (referring to the app directory/package) or FLASK_APP=run:app (if run.py creates the app instance named app) are likely candidates. Adjust based on your actual run.py or app/__init__.py.
+Make sure FLASK_APP points to the correct Flask application instance (e.g., app if your main file is app.py and contains app = Flask(__name__), or run:app if it's run.py). Looking at your structure (backend/run.py, backend/app/), FLASK_APP=run:app or FLASK_APP=app are likely candidates. Verify this based on your run.py or backend/app/__init__.py implementation.
 3. Set Up the Frontend (React/Node.js)
 Navigate to the Frontend Directory:
 cd infosys-demo-ui
@@ -95,7 +95,7 @@ Bash
 Running the Application
 You need to run both the backend and frontend servers simultaneously. Open two separate terminal windows/tabs for this.
 Terminal 1: Run the Backend Server
-Make sure you are in the search-app root directory.
+Make sure you are in the infosys-search-recommendation-poc root directory.
 Ensure the Python virtual environment is activated (source .venv/bin/activate).
 Run the Flask development server:
 # Ensure FLASK_APP is set correctly in backend/.env
@@ -108,6 +108,7 @@ flask run
 # flask run
 Use code with caution.
 Bash
+Check your run.py to confirm the best way to start the server and update this command if needed.
 The backend server should start, typically on http://127.0.0.1:5000/. Check the terminal output for the exact address.
 Terminal 2: Run the Frontend Server
 Navigate to the frontend directory:
